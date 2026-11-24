@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+  <defs>
+    <linearGradient id="bgGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#141812"/>
+      <stop offset="100%" stop-color="#222B1E"/>
+    </linearGradient>
+    <filter id="shadowFilter" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#000" flood-opacity="0.55"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#bgGrad2)"/>
+
+  <!-- Subtle Blueprint Grid -->
+  <g stroke="#ECDFCC" stroke-opacity="0.04" stroke-width="1">
+    <line x1="0" y1="135" x2="1200" y2="135"/>
+    <line x1="0" y1="270" x2="1200" y2="270"/>
+    <line x1="0" y1="405" x2="1200" y2="405"/>
+    <line x1="0" y1="540" x2="1200" y2="540"/>
+    <line x1="300" y1="0" x2="300" y2="675"/>
+    <line x1="600" y1="0" x2="600" y2="675"/>
+    <line x1="900" y1="0" x2="900" y2="675"/>
+  </g>
+
+  <!-- Main Window -->
+  <rect x="80" y="60" width="1040" height="555" rx="16" fill="#1C2218" stroke="#ECDFCC" stroke-opacity="0.2" filter="url(#shadowFilter)"/>
+
+  <!-- Window Header -->
+  <rect x="80" y="60" width="1040" height="50" rx="16" fill="#121610"/>
+  <rect x="80" y="94" width="1040" height="16" fill="#121610"/>
+  <circle cx="112" cy="85" r="7" fill="#FF5F56"/>
+  <circle cx="134" cy="85" r="7" fill="#FFBD2E"/>
+  <circle cx="156" cy="85" r="7" fill="#27C93F"/>
+  <text x="600" y="90" fill="#ECDFCC" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="600" text-anchor="middle">taskflow.api.yomna.dev — Workflow &amp; Task Pipeline</text>
+  <rect x="1000" y="74" width="90" height="24" rx="12" fill="#2E3725" stroke="#ECDFCC" stroke-opacity="0.3"/>
+  <text x="1045" y="90" fill="#4ADE80" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" text-anchor="middle">ACTIVE</text>
+
+  <!-- Left Architecture Visualizer Column -->
+  <rect x="80" y="110" width="310" height="505" fill="#161B12" stroke="#ECDFCC" stroke-opacity="0.08"/>
+  <text x="110" y="145" fill="#8E8D8A" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="700">PIPELINE ARCHITECTURE</text>
+
+  <g transform="translate(105, 170)">
+    <!-- Stage 1 -->
+    <rect x="0" y="0" width="260" height="54" rx="10" fill="#242D1D" stroke="#ECDFCC" stroke-opacity="0.2"/>
+    <text x="20" y="25" fill="#ECDFCC" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="700">Express Route Middleware</text>
+    <text x="20" y="44" fill="#8E8D8A" font-family="'JetBrains Mono', monospace" font-size="10">JWT Token &amp; Schema Validation</text>
+
+    <!-- Connector line -->
+    <line x1="130" y1="54" x2="130" y2="74" stroke="#ECDFCC" stroke-opacity="0.3" stroke-width="2"/>
+
+    <!-- Stage 2 -->
+    <rect x="0" y="74" width="260" height="54" rx="10" fill="#242D1D" stroke="#ECDFCC" stroke-opacity="0.2"/>
+    <text x="20" y="99" fill="#4ADE80" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="700">Task Scheduling Service</text>
+    <text x="20" y="118" fill="#8E8D8A" font-family="'JetBrains Mono', monospace" font-size="10">Concurrent Worker Threads</text>
+
+    <!-- Connector line -->
+    <line x1="130" y1="128" x2="130" y2="148" stroke="#ECDFCC" stroke-opacity="0.3" stroke-width="2"/>
+
+    <!-- Stage 3 -->
+    <rect x="0" y="148" width="260" height="54" rx="10" fill="#242D1D" stroke="#ECDFCC" stroke-opacity="0.2"/>
+    <text x="20" y="173" fill="#60A5FA" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="700">MongoDB Aggregations</text>
+    <text x="20" y="192" fill="#8E8D8A" font-family="'JetBrains Mono', monospace" font-size="10">Indexed Queries &amp; Audit Logs</text>
+  </g>
+
+  <!-- Right Dashboard Content -->
+  <g transform="translate(425, 140)">
+    <text x="0" y="25" fill="#ECDFCC" font-family="'Outfit', sans-serif" font-size="28" font-weight="800">Enterprise Task &amp; Workflow API</text>
+    <text x="0" y="55" fill="#C7BBAE" font-family="'Plus Jakarta Sans', sans-serif" font-size="14">Engineered by Yomna Mohamed | Node.js, Express, MongoDB, REST APIs</text>
+
+    <!-- Metric Pills Grid -->
+    <g transform="translate(0, 80)">
+      <rect x="0" y="0" width="200" height="85" rx="12" fill="#20271B" stroke="#ECDFCC" stroke-opacity="0.15"/>
+      <text x="20" y="32" fill="#8E8D8A" font-family="'JetBrains Mono', monospace" font-size="11">SERVER UPTIME</text>
+      <text x="20" y="65" fill="#4ADE80" font-family="'Outfit', sans-serif" font-size="26" font-weight="800">99.98%</text>
+
+      <rect x="220" y="0" width="200" height="85" rx="12" fill="#20271B" stroke="#ECDFCC" stroke-opacity="0.15"/>
+      <text x="240" y="32" fill="#8E8D8A" font-family="'JetBrains Mono', monospace" font-size="11">CONCURRENCY</text>
+      <text x="240" y="65" fill="#ECDFCC" font-family="'Outfit', sans-serif" font-size="26" font-weight="800">10k+ req/s</text>
+
+      <rect x="440" y="0" width="220" height="85" rx="12" fill="#20271B" stroke="#ECDFCC" stroke-opacity="0.15"/>
+      <text x="460" y="32" fill="#8E8D8A" font-family="'JetBrains Mono', monospace" font-size="11">CODE ARCHITECTURE</text>
+      <text x="460" y="65" fill="#60A5FA" font-family="'Outfit', sans-serif" font-size="26" font-weight="800">Clean MVC</text>
+    </g>
+
+    <!-- Code Panel -->
+    <g transform="translate(0, 190)">
+      <rect x="0" y="0" width="665" height="205" rx="12" fill="#12150F" stroke="#ECDFCC" stroke-opacity="0.12"/>
+      <text x="25" y="35" fill="#697565" font-family="'JetBrains Mono', monospace" font-size="13">// services/taskService.js - Yomna Mohamed</text>
+      <text x="25" y="65" fill="#F472B6" font-family="'JetBrains Mono', monospace" font-size="13">class <tspan fill="#60A5FA">TaskWorkflowService</tspan> {</text>
+      <text x="50" y="95" fill="#ECDFCC" font-family="'JetBrains Mono', monospace" font-size="13">async assignTaskWithAudit(taskId, assigneeId, actorId) {</text>
+      <text x="75" y="125" fill="#ECDFCC" font-family="'JetBrains Mono', monospace" font-size="13">const updatedTask = await Task.findByIdAndUpdate(taskId, { assignee: assigneeId });</text>
+      <text x="75" y="155" fill="#ECDFCC" font-family="'JetBrains Mono', monospace" font-size="13">await AuditLog.create({ action: "TASK_ASSIGNED", task: taskId, actor: actorId });</text>
+      <text x="75" y="185" fill="#4ADE80" font-family="'JetBrains Mono', monospace" font-size="13">return { success: true, data: updatedTask };</text>
+    </g>
+  </g>
+</svg>
